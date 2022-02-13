@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.8.7rc1 on win32)" generated="20220213 11:45:41.049" rpa="false" schemaversion="2">
+<suite id="s1" name="TestCase" source="C:\Users\Administrator\PycharmProjects\MockProjectRobotFramework\TestCase">
+<suite id="s1-s1" name="ChangePassTest" source="C:\Users\Administrator\PycharmProjects\MockProjectRobotFramework\TestCase\ChangePassTest.robot">
+<test id="s1-s1-t1" name="ChangePass">
+<kw name="Open_Browsers" library="commonKeyword">
+<arg>${SiteUrl}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${SiteUrl}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220213 11:45:41.416" level="INFO">Opening browser 'chrome' to base url 'https://igos.edxops.com/'.</msg>
+<status status="PASS" starttime="20220213 11:45:41.416" endtime="20220213 11:45:44.312"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220213 11:45:44.312" endtime="20220213 11:45:44.444"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:41.415" endtime="20220213 11:45:44.444"/>
+</kw>
+<kw name="Click menu ShoppingCart" library="commonKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${menuShoppingCart}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:45:44.447" level="INFO">Clicking element 'xpath://a[@id='btn-login']/following-sibling::a[1]'.</msg>
+<status status="PASS" starttime="20220213 11:45:44.446" endtime="20220213 11:45:44.819"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:44.445" endtime="20220213 11:45:44.819"/>
+</kw>
+<kw name="Select menu MyGosTmAccount" library="commonKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${menuMyGosTMAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:45:44.821" level="INFO">Clicking element 'xpath://div[@id='navbarSupportedContent']/ul/li/a[contains(text(),'myGOS™ Account')]'.</msg>
+<status status="PASS" starttime="20220213 11:45:44.820" endtime="20220213 11:45:44.879"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:44.819" endtime="20220213 11:45:44.879"/>
+</kw>
+<kw name="Select ChangePassword menu" library="ChangePassKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${menuChangePass}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:45:44.881" level="INFO">Clicking element 'xpath://a[contains(text(),'Change myGOS™ Password')]'.</msg>
+<status status="PASS" starttime="20220213 11:45:44.880" endtime="20220213 11:45:45.345"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:44.880" endtime="20220213 11:45:45.345"/>
+</kw>
+<kw name="Enter Current Password" library="ChangePassKeyword">
+<arg>${CurPass}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${txtCurrentPass}</arg>
+<arg>${CurPass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220213 11:45:45.349" level="INFO">Typing text '123123' into text field 'xpath://input[@id='password']'.</msg>
+<status status="PASS" starttime="20220213 11:45:45.348" endtime="20220213 11:45:45.466"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:45.346" endtime="20220213 11:45:45.466"/>
+</kw>
+<kw name="Enter New Password" library="ChangePassKeyword">
+<arg>${NewPass}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${txtNewPass}</arg>
+<arg>${NewPass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220213 11:45:45.468" level="INFO">Typing text '123456a@' into text field 'id:newpassword'.</msg>
+<status status="PASS" starttime="20220213 11:45:45.467" endtime="20220213 11:45:45.573"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:45.467" endtime="20220213 11:45:45.573"/>
+</kw>
+<kw name="Enter confirm Password" library="ChangePassKeyword">
+<arg>${ConfirmPass}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${txtConfirmPass}</arg>
+<arg>${ConfirmPass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220213 11:45:45.575" level="INFO">Typing text '123456a@' into text field 'id:retypepassword'.</msg>
+<status status="PASS" starttime="20220213 11:45:45.575" endtime="20220213 11:45:45.692"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:45.574" endtime="20220213 11:45:45.692"/>
+</kw>
+<kw name="Click Change Password button" library="ChangePassKeyword">
+<kw name="Click Link" library="Selenium2Library">
+<arg>${btnChangePass}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220213 11:45:45.694" level="INFO">Clicking link 'xpath://a[contains(text(),'Change Password')]'.</msg>
+<status status="PASS" starttime="20220213 11:45:45.693" endtime="20220213 11:45:46.743"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:45.693" endtime="20220213 11:45:46.744"/>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<arg>${lableMyAccLogin}</arg>
+<arg>mySOP™ Account Login</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220213 11:45:46.745" level="INFO">Verifying element 'xpath://h2[contains(text(),'mySOP™ Account Login')]' contains exact text 'mySOP™ Account Login'.</msg>
+<status status="PASS" starttime="20220213 11:45:46.744" endtime="20220213 11:45:46.785"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220213 11:45:46.786" endtime="20220213 11:45:47.940"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:41.414" endtime="20220213 11:45:47.941"/>
+</test>
+<status status="PASS" starttime="20220213 11:45:41.090" endtime="20220213 11:45:47.950"/>
+</suite>
+<suite id="s1-s2" name="ForgotPassTest" source="C:\Users\Administrator\PycharmProjects\MockProjectRobotFramework\TestCase\ForgotPassTest.robot">
+<test id="s1-s2-t1" name="ForgotPass">
+<kw name="Open_Browsers" library="commonKeyword">
+<arg>${SiteUrl}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${SiteUrl}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220213 11:45:47.993" level="INFO">Opening browser 'chrome' to base url 'https://igos.edxops.com/'.</msg>
+<status status="PASS" starttime="20220213 11:45:47.992" endtime="20220213 11:45:50.402"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220213 11:45:50.403" endtime="20220213 11:45:50.529"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:47.990" endtime="20220213 11:45:50.529"/>
+</kw>
+<kw name="Click menu ShoppingCart" library="commonKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${menuShoppingCart}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:45:50.531" level="INFO">Clicking element 'xpath://a[@id='btn-login']/following-sibling::a[1]'.</msg>
+<status status="PASS" starttime="20220213 11:45:50.530" endtime="20220213 11:45:50.925"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:50.530" endtime="20220213 11:45:50.926"/>
+</kw>
+<kw name="Select menu MyGosTmAccount" library="commonKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${menuMyGosTMAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:45:50.928" level="INFO">Clicking element 'xpath://div[@id='navbarSupportedContent']/ul/li/a[contains(text(),'myGOS™ Account')]'.</msg>
+<status status="PASS" starttime="20220213 11:45:50.927" endtime="20220213 11:45:50.989"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:50.926" endtime="20220213 11:45:50.990"/>
+</kw>
+<kw name="Select menu SignOutMyGosTmAcount" library="commonKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${menuSignoutMyAcct}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:45:50.992" level="INFO">Clicking element 'xpath://a[contains(text(),'Sign-out myGOS™ Account')]'.</msg>
+<status status="PASS" starttime="20220213 11:45:50.991" endtime="20220213 11:45:51.271"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:50.990" endtime="20220213 11:45:51.271"/>
+</kw>
+<kw name="Click SignIn Now button" library="commonKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${btnSignInNow}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:45:51.274" level="INFO">Clicking element 'xpath://p/a[@class='btn btn-black']'.</msg>
+<status status="PASS" starttime="20220213 11:45:51.273" endtime="20220213 11:45:52.208"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:51.272" endtime="20220213 11:45:52.209"/>
+</kw>
+<kw name="click Lost your password" library="ForgotPassKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${lnkForgotPwd}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:45:52.210" level="INFO">Clicking element 'xpath://a[contains(text(),'Lost your password?')]'.</msg>
+<status status="PASS" starttime="20220213 11:45:52.210" endtime="20220213 11:45:52.510"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:52.209" endtime="20220213 11:45:52.510"/>
+</kw>
+<kw name="Enter Email" library="ForgotPassKeyword">
+<arg>${email}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${txtEmail}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220213 11:45:52.513" level="INFO">Typing text 'tham.0909@gmail.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20220213 11:45:52.512" endtime="20220213 11:45:52.660"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:52.511" endtime="20220213 11:45:52.660"/>
+</kw>
+<kw name="Click Recover Now button" library="ForgotPassKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${btnRecoverNow}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:45:52.661" level="INFO">Clicking element 'xpath://a[contains(text(),'Recover Now! »')]'.</msg>
+<status status="PASS" starttime="20220213 11:45:52.661" endtime="20220213 11:45:52.951"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:52.660" endtime="20220213 11:45:52.952"/>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<arg>${labelCreateAcc}</arg>
+<arg>CREATE a new myGOS™ Account</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220213 11:45:52.954" level="INFO">Verifying element 'xpath: //h2[contains(text(),'CREATE a new myGOS™ Account')]' contains exact text 'CREATE a new myGOS™ Account'.</msg>
+<status status="PASS" starttime="20220213 11:45:52.953" endtime="20220213 11:45:52.994"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220213 11:45:52.995" endtime="20220213 11:45:54.118"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:47.989" endtime="20220213 11:45:54.119"/>
+</test>
+<status status="PASS" starttime="20220213 11:45:47.960" endtime="20220213 11:45:54.121"/>
+</suite>
+<suite id="s1-s3" name="LoginTest" source="C:\Users\Administrator\PycharmProjects\MockProjectRobotFramework\TestCase\LoginTest.robot">
+<test id="s1-s3-t1" name="Login successfully">
+<kw name="Open_Browsers" library="commonKeyword">
+<arg>${SiteUrl}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${SiteUrl}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220213 11:45:54.140" level="INFO">Opening browser 'chrome' to base url 'https://igos.edxops.com/'.</msg>
+<status status="PASS" starttime="20220213 11:45:54.139" endtime="20220213 11:45:56.580"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220213 11:45:56.580" endtime="20220213 11:45:56.715"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:54.138" endtime="20220213 11:45:56.715"/>
+</kw>
+<kw name="Click menu ShoppingCart" library="commonKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${menuShoppingCart}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:45:56.717" level="INFO">Clicking element 'xpath://a[@id='btn-login']/following-sibling::a[1]'.</msg>
+<status status="PASS" starttime="20220213 11:45:56.716" endtime="20220213 11:45:57.144"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:56.716" endtime="20220213 11:45:57.144"/>
+</kw>
+<kw name="Select menu MyGosTmAccount" library="commonKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${menuMyGosTMAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:45:57.146" level="INFO">Clicking element 'xpath://div[@id='navbarSupportedContent']/ul/li/a[contains(text(),'myGOS™ Account')]'.</msg>
+<status status="PASS" starttime="20220213 11:45:57.145" endtime="20220213 11:45:57.259"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:57.145" endtime="20220213 11:45:57.259"/>
+</kw>
+<kw name="Select menu SignOutMyGosTmAcount" library="commonKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${menuSignoutMyAcct}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:45:57.262" level="INFO">Clicking element 'xpath://a[contains(text(),'Sign-out myGOS™ Account')]'.</msg>
+<status status="PASS" starttime="20220213 11:45:57.261" endtime="20220213 11:45:57.690"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:57.260" endtime="20220213 11:45:57.691"/>
+</kw>
+<kw name="Click SignIn Now button" library="commonKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${btnSignInNow}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:45:57.694" level="INFO">Clicking element 'xpath://p/a[@class='btn btn-black']'.</msg>
+<status status="PASS" starttime="20220213 11:45:57.693" endtime="20220213 11:45:58.628"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:57.692" endtime="20220213 11:45:58.628"/>
+</kw>
+<kw name="Enter Password" library="LoginKeyword">
+<arg>${password}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${txtPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220213 11:45:58.630" level="INFO">Typing text '12312' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20220213 11:45:58.629" endtime="20220213 11:45:58.730"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:58.629" endtime="20220213 11:45:58.730"/>
+</kw>
+<kw name="Click SignIn button" library="LoginKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${btnSignIn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:45:58.732" level="INFO">Clicking element 'xpath://a[contains(text(),'Sign-in Now! »')]'.</msg>
+<status status="PASS" starttime="20220213 11:45:58.731" endtime="20220213 11:45:59.062"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:58.731" endtime="20220213 11:45:59.062"/>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<arg>${labelPaymentInfo}</arg>
+<arg>Payment Information</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220213 11:45:59.064" level="INFO">Verifying element 'xpath://h4[contains(text(),'Payment Information')]' contains exact text 'Payment Information'.</msg>
+<status status="PASS" starttime="20220213 11:45:59.063" endtime="20220213 11:45:59.096"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220213 11:45:59.096" endtime="20220213 11:46:00.192"/>
+</kw>
+<status status="PASS" starttime="20220213 11:45:54.137" endtime="20220213 11:46:00.193"/>
+</test>
+<status status="PASS" starttime="20220213 11:45:54.125" endtime="20220213 11:46:00.195"/>
+</suite>
+<suite id="s1-s4" name="MyAccountTest" source="C:\Users\Administrator\PycharmProjects\MockProjectRobotFramework\TestCase\MyAccountTest.robot">
+<test id="s1-s4-t1" name="MyAccount">
+<kw name="Open_Browsers" library="commonKeyword">
+<arg>${SiteUrl}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${SiteUrl}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220213 11:46:00.213" level="INFO">Opening browser 'chrome' to base url 'https://igos.edxops.com/'.</msg>
+<status status="PASS" starttime="20220213 11:46:00.212" endtime="20220213 11:46:03.483"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220213 11:46:03.484" endtime="20220213 11:46:03.598"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:00.212" endtime="20220213 11:46:03.598"/>
+</kw>
+<kw name="Click menu ShoppingCart" library="commonKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${menuShoppingCart}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:46:03.600" level="INFO">Clicking element 'xpath://a[@id='btn-login']/following-sibling::a[1]'.</msg>
+<status status="PASS" starttime="20220213 11:46:03.600" endtime="20220213 11:46:03.968"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:03.599" endtime="20220213 11:46:03.968"/>
+</kw>
+<kw name="Select menu MyGosTmAccount" library="commonKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${menuMyGosTMAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:46:03.972" level="INFO">Clicking element 'xpath://div[@id='navbarSupportedContent']/ul/li/a[contains(text(),'myGOS™ Account')]'.</msg>
+<status status="PASS" starttime="20220213 11:46:03.971" endtime="20220213 11:46:04.029"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:03.971" endtime="20220213 11:46:04.030"/>
+</kw>
+<kw name="Select MyGosTmAccount item" library="MyAccountKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${menuMyAcct}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:46:04.031" level="INFO">Clicking element 'xpath://a[@href='https://igos.edxops.com/MyAccount/']'.</msg>
+<status status="PASS" starttime="20220213 11:46:04.031" endtime="20220213 11:46:04.345"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:04.030" endtime="20220213 11:46:04.345"/>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<arg>${labelWellcome}</arg>
+<arg>Welcome to DEMO - GOS™ System</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220213 11:46:04.347" level="INFO">Verifying element 'xpath://h2[contains(text(),'Welcome to DEMO - GOS™ System')]' contains exact text 'Welcome to DEMO - GOS™ System'.</msg>
+<status status="PASS" starttime="20220213 11:46:04.346" endtime="20220213 11:46:04.377"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220213 11:46:04.378" endtime="20220213 11:46:05.602"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:00.211" endtime="20220213 11:46:05.603"/>
+</test>
+<status status="PASS" starttime="20220213 11:46:00.198" endtime="20220213 11:46:05.605"/>
+</suite>
+<suite id="s1-s5" name="SearchAndNavigationTest" source="C:\Users\Administrator\PycharmProjects\MockProjectRobotFramework\TestCase\SearchAndNavigationTest.robot">
+<test id="s1-s5-t1" name="Searching">
+<kw name="Open_Browsers" library="commonKeyword">
+<arg>${SiteUrl}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${SiteUrl}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220213 11:46:05.623" level="INFO">Opening browser 'chrome' to base url 'https://igos.edxops.com/'.</msg>
+<status status="PASS" starttime="20220213 11:46:05.622" endtime="20220213 11:46:08.649"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220213 11:46:08.649" endtime="20220213 11:46:08.761"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:05.621" endtime="20220213 11:46:08.761"/>
+</kw>
+<kw name="Enter keyword into textbox" library="SearchAndPagingKeyword">
+<arg>${keyword}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${txtSearch}</arg>
+<arg>${keyword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220213 11:46:08.763" level="INFO">Typing text 'TV' into text field 'id:keyword'.</msg>
+<status status="PASS" starttime="20220213 11:46:08.762" endtime="20220213 11:46:08.862"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:08.762" endtime="20220213 11:46:08.862"/>
+</kw>
+<kw name="Click Search button" library="SearchAndPagingKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${btnSearch}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:46:08.864" level="INFO">Clicking element 'xpath://a[contains(text(),'Search Now! »')]'.</msg>
+<status status="PASS" starttime="20220213 11:46:08.863" endtime="20220213 11:46:09.226"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:08.863" endtime="20220213 11:46:09.226"/>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<arg>${lableResult}</arg>
+<arg>${lable1}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220213 11:46:09.258" level="INFO">Element 'xpath://p[contains(text(),'How many inch you want to find?')]' contains text 'How many inch you want to find?'.</msg>
+<status status="PASS" starttime="20220213 11:46:09.226" endtime="20220213 11:46:09.258"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:05.620" endtime="20220213 11:46:09.259"/>
+</test>
+<test id="s1-s5-t2" name="Navigation">
+<kw name="Click Displaymore button" library="SearchAndPagingKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${btnDisplayMoreBeforeClick}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:46:09.262" level="INFO">Clicking element 'xpath://a[contains(text(),'Display more 20 product(s).')]'.</msg>
+<status status="PASS" starttime="20220213 11:46:09.261" endtime="20220213 11:46:09.312"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:09.261" endtime="20220213 11:46:09.313"/>
+</kw>
+<kw name="Element Should Not Be Visible" library="Selenium2Library">
+<arg>${btnDisplayMoreBeforeClick}</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<msg timestamp="20220213 11:46:09.337" level="INFO">Element 'xpath://a[contains(text(),'Display more 20 product(s).')]' exists but is not displayed.</msg>
+<status status="PASS" starttime="20220213 11:46:09.313" endtime="20220213 11:46:09.337"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220213 11:46:09.337" endtime="20220213 11:46:10.517"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:09.260" endtime="20220213 11:46:10.518"/>
+</test>
+<status status="PASS" starttime="20220213 11:46:05.608" endtime="20220213 11:46:10.520"/>
+</suite>
+<suite id="s1-s6" name="SignUpTest" source="C:\Users\Administrator\PycharmProjects\MockProjectRobotFramework\TestCase\SignUpTest.robot">
+<test id="s1-s6-t1" name="SignUp">
+<kw name="Open_Browsers" library="commonKeyword">
+<arg>${SiteUrl}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${SiteUrl}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220213 11:46:10.541" level="INFO">Opening browser 'chrome' to base url 'https://igos.edxops.com/'.</msg>
+<status status="PASS" starttime="20220213 11:46:10.539" endtime="20220213 11:46:13.229"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220213 11:46:13.230" endtime="20220213 11:46:13.365"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:10.538" endtime="20220213 11:46:13.365"/>
+</kw>
+<kw name="Click menu ShoppingCart" library="commonKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${menuShoppingCart}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:46:13.367" level="INFO">Clicking element 'xpath://a[@id='btn-login']/following-sibling::a[1]'.</msg>
+<status status="PASS" starttime="20220213 11:46:13.366" endtime="20220213 11:46:13.725"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:13.366" endtime="20220213 11:46:13.726"/>
+</kw>
+<kw name="Select menu MyGosTmAccount" library="commonKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${menuMyGosTMAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:46:13.728" level="INFO">Clicking element 'xpath://div[@id='navbarSupportedContent']/ul/li/a[contains(text(),'myGOS™ Account')]'.</msg>
+<status status="PASS" starttime="20220213 11:46:13.727" endtime="20220213 11:46:13.784"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:13.727" endtime="20220213 11:46:13.784"/>
+</kw>
+<kw name="Select SignOutMyAccount" library="commonKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${menuSignoutMyAcct}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:46:13.785" level="INFO">Clicking element 'xpath://a[contains(text(),'Sign-out myGOS™ Account')]'.</msg>
+<status status="PASS" starttime="20220213 11:46:13.785" endtime="20220213 11:46:14.112"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:13.784" endtime="20220213 11:46:14.112"/>
+</kw>
+<kw name="Click CreatMyAccount button" library="SignUpKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${btnCreateMyGosAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:46:14.114" level="INFO">Clicking element 'xpath://a[contains(text(),'Create myGOS™ Account!')]'.</msg>
+<status status="PASS" starttime="20220213 11:46:14.114" endtime="20220213 11:46:15.155"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:14.113" endtime="20220213 11:46:15.156"/>
+</kw>
+<kw name="Enter Email" library="SignUpKeyword">
+<arg>${email}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${txtEmailAddress}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220213 11:46:15.158" level="INFO">Typing text 'tham.0909@gmail.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20220213 11:46:15.157" endtime="20220213 11:46:15.282"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:15.156" endtime="20220213 11:46:15.282"/>
+</kw>
+<kw name="Enter FullName" library="SignUpKeyword">
+<arg>${name}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${txtFullName}</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220213 11:46:15.284" level="INFO">Typing text 'Tham Nguyen' into text field 'id:fullname'.</msg>
+<status status="PASS" starttime="20220213 11:46:15.284" endtime="20220213 11:46:15.389"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:15.283" endtime="20220213 11:46:15.389"/>
+</kw>
+<kw name="Enter MobileNumber" library="SignUpKeyword">
+<arg>${phone}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${txtPhone}</arg>
+<arg>${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220213 11:46:15.391" level="INFO">Typing text '0976496456' into text field 'id:mobile'.</msg>
+<status status="PASS" starttime="20220213 11:46:15.391" endtime="20220213 11:46:15.497"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:15.390" endtime="20220213 11:46:15.498"/>
+</kw>
+<kw name="Select Gender" library="SignUpKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${rdoGenderFemale}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:46:15.500" level="INFO">Clicking element 'xpath://input[@name='Gender'][@value='1']'.</msg>
+<status status="PASS" starttime="20220213 11:46:15.499" endtime="20220213 11:46:15.554"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:15.498" endtime="20220213 11:46:15.555"/>
+</kw>
+<kw name="Select Status" library="SignUpKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${rdoMaritalStatusMarried}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:46:15.557" level="INFO">Clicking element 'xpath://input[@name='Marital'][@value='1']'.</msg>
+<status status="PASS" starttime="20220213 11:46:15.556" endtime="20220213 11:46:15.610"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:15.556" endtime="20220213 11:46:15.610"/>
+</kw>
+<kw name="Click Create Account button" library="SignUpKeyword">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${btnCreateAccount}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220213 11:46:15.611" level="INFO">Clicking element 'xpath://a[contains(text(),'Create Account')]'.</msg>
+<status status="PASS" starttime="20220213 11:46:15.611" endtime="20220213 11:46:15.896"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:15.611" endtime="20220213 11:46:15.896"/>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<arg>${lableMyGosAccount}</arg>
+<arg>myGOS™ Account</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220213 11:46:15.897" level="INFO">Verifying element 'xpath://h2[contains(text(),'myGOS™ Account')]' contains exact text 'myGOS™ Account'.</msg>
+<status status="PASS" starttime="20220213 11:46:15.897" endtime="20220213 11:46:15.949"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220213 11:46:15.950" endtime="20220213 11:46:17.069"/>
+</kw>
+<status status="PASS" starttime="20220213 11:46:10.538" endtime="20220213 11:46:17.070"/>
+</test>
+<status status="PASS" starttime="20220213 11:46:10.523" endtime="20220213 11:46:17.072"/>
+</suite>
+<status status="PASS" starttime="20220213 11:45:41.052" endtime="20220213 11:46:17.076"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="7" fail="0" skip="0" id="s1" name="TestCase">TestCase</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="ChangePassTest">TestCase.ChangePassTest</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="ForgotPassTest">TestCase.ForgotPassTest</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="LoginTest">TestCase.LoginTest</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s4" name="MyAccountTest">TestCase.MyAccountTest</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s5" name="SearchAndNavigationTest">TestCase.SearchAndNavigationTest</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s6" name="SignUpTest">TestCase.SignUpTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
